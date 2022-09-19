@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.funFacts {
+  color: #fff;
+  margin-left: 8rem;
+  margin-top: 8rem;
+}
+.funFacts h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.funFacts ul {
+  font-size: 1.5rem;
+  list-style-type: none;
+  margin-left: 3rem;
+}
+.funFacts ul li {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.funFacts ul li:before {
+  content: "•";
+  color: #61DAFB;
+  font-weight: bold;
+  font-size: 3rem;
+  display: inline-block;
+  width: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

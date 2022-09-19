@@ -1,0 +1,28 @@
+.nav {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+
+
+  &__navWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 250px;
+    }
+    h4 {
+      color: #fff;
+      margin-right: 1rem;
+    }
+  }
+
+  &__navTabs {
+    color: #fff;
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+  }
+}
+

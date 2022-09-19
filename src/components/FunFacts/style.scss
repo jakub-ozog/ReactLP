@@ -1,0 +1,32 @@
+.funFacts {
+  color: #fff;
+  margin-left: 8rem;
+  margin-top: 8rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin-left: 3rem;
+
+    li {
+      margin-top: .5rem;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: "\2022";
+        color: #61DAFB;
+        font-weight: bold;
+        font-size: 3rem;
+        display: inline-block;
+        width: 1em;
+      }
+    }
+  }
+}

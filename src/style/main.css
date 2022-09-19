@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  padding: 1.5rem 0;
+  background-color: #21222A;
+}
+
+/*# sourceMappingURL=main.css.map */

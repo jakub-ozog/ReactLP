@@ -1,0 +1,25 @@
+.nav {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav__navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__navWrapper img {
+  width: 250px;
+}
+.nav__navWrapper h4 {
+  color: #fff;
+  margin-right: 1rem;
+}
+.nav__navTabs {
+  color: #fff;
+  display: flex;
+  gap: 5rem;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
