@@ -1,0 +1,16 @@
+.gallery {
+  margin-top: 8rem;
+}
+.gallery__header {
+  color: #fff;
+}
+.gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery__wrapper img {
+  max-width: 600px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

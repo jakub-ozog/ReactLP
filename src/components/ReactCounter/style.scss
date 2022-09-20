@@ -1,0 +1,15 @@
+.counter {
+  margin-top: 4rem;
+
+  h3 {
+    color: white;
+  }
+
+  &__counterWrapper {
+    display: flex;
+    gap: 2rem;
+  }
+  p {
+    color:#61DAFB;
+  }
+}

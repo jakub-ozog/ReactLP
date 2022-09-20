@@ -20,7 +20,6 @@ export default function Navigation() {
 
 
     const result = () => {
-        console.log('execute result')
         return 2 + 5
     }
 

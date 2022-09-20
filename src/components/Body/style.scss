@@ -5,11 +5,14 @@ body {
 
 .reactIcon {
   position: absolute;
-  top:30%;
+  top: 30%;
   right: -15%;
+  z-index: -1;
+  opacity: .5;
+
   img {
 
-  width: 800px;
+    width: 800px;
   }
 
 }

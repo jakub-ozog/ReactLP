@@ -12,7 +12,7 @@ export default function BaseLayout(props) {
             <header className="App-header">
                 <Navbar/>
             </header>
-            <main className="body">
+            <main className="bodyContainer">
                 <div className="reactIcon">
                     <img src={ReactIcon} alt=""/>
                 </div>

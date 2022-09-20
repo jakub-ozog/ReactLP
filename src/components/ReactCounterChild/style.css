@@ -1,0 +1,14 @@
+.counterChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border: 2px solid #61dafb;
+  width: 100px;
+  height: 100px;
+}
+.counterChild h2 {
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
