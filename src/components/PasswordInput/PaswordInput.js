@@ -18,17 +18,22 @@ export const PasswordInput = (props) => {
     return (
         <>
             <div className="passInput">
-                <input className="passInput__input" type={!hide ? "password" : "text"} {...props} required/>
+                <input name="password" className="passInput__input" type={!hide ? "password" : "text"} {...props} required placeholder="Password"/>
                 <i className="passInput__showPassIcon" onClick={toggle}>
                     {hide ? <AiFillEyeInvisible/> : <AiFillEye/>}
                 </i>
+
+                
             </div>
 
             <div className="passRetypeInput">
-                <input className="passRetypeInput__input" type={!retype ? "password" : "text"} {...props} required/>
+                <input placeholder="Retype password" className="passRetypeInput__input" type={!retype ? "password" : "text"} {...props} required/>
                 <i className="passRetypeInput__showPassRetypeIcon" onClick={toggleRetype}>
                     {retype ? <AiFillEyeInvisible/> : <AiFillEye/>}
                 </i>
+                <label htmlFor="retypePassword" className="registrationDetails__passVerif">
+                    at least 8 characters • upper case • lower case • digit
+                </label>
             </div>
 
         </>

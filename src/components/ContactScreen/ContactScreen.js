@@ -2,6 +2,7 @@ import './style.scss'
 import React, {useState} from 'react'
 import {useForm} from "react-hook-form";
 import {PasswordInput} from "../PasswordInput/PaswordInput";
+import {PasswordInputCopy} from "../PasswordInput/PaswordInputCopy";
 
 export default function ContactScreen() {
     const {
@@ -34,14 +35,14 @@ export default function ContactScreen() {
                 </div>
                 <div className="accountType">
                     <input id="regularAccount"
-                           {...register("accountType", {required: true})}
+                           {...register("accountType")}
                            value="Regular account"
                            type="radio"/>
                     <label htmlFor="regularAccount">
                         Regular account
                     </label>
                     <input id="businessAccount"
-                           {...register("radio", {required: true})}
+                           {...register("radio")}
                            value="Business account"
                            type="radio"/>
                     <label htmlFor="businessAccount">
@@ -74,24 +75,40 @@ export default function ContactScreen() {
                         {...register('email', {required: true})}/>
                     {errors.email && <p>{errors.email.message}</p>}
 
-                    <input
-
-                        placeholder="Password"
+                    {/*<PasswordInput/>*/}
+                    <PasswordInputCopy
                         name="password"
-                        {...register('password', {
-                            validate: value => value === 'appgo' ? true : 'wrong pass'
-                        })}
+                        placeholder = "password"
+                        register={{...register('password', {
+                                validate: value => value === 'appgo' ? true : 'wrong pass'
+                            })}}
                     />
+                    <PasswordInputCopy
+                        name="password_retype"
+                        label="at least 8 characters • upper case • lower case • digit"
+                        placeholder = "Retype your password"
+                        register={{...register('password_retype', {
+                                validate: value => value === 'appgo' ? true : 'wrong pass'
+                            })}}
+                    />
+
+
+
+                    {/*<input*/}
+
+                    {/*    placeholder="Password"*/}
+                    {/*    name="password"*/}
+                    {/*    {...register('password', {*/}
+                    {/*        validate: value => value === 'appgo' ? true : 'wrong pass'*/}
+                    {/*    })}*/}
+                    {/*/>*/}
                     {/*<label htmlFor="password">*/}
                     {/*    <span className="registrationDetails__showPass">SHOW</span>*/}
                     {/*</label>*/}
-                    {errors.password && <p>{errors.password.message}</p>}
-                    <label htmlFor="password" className="registrationDetails__passVerif">
-                        at least 8 characters • upper case • lower case • digit
-                    </label>
-
-                    <PasswordInput/>
-
+                    {/*{errors.password && <p>{errors.password.message}</p>}*/}
+                    {/*<label htmlFor="password" className="registrationDetails__passVerif">*/}
+                    {/*    at least 8 characters • upper case • lower case • digit*/}
+                    {/*</label>*/}
 
 
 
@@ -106,11 +123,7 @@ export default function ContactScreen() {
                     {/*/>*/}
                     {/*<label htmlFor="retypePassword">*/}
                     {/*    <span className="registrationDetails__showPass -retypePass">SHOW</span>*/}
-                    {/*</label>*/}
-                    {errors.retypePassword && <p>{errors.retypePassword.message}</p>}
-                    <label htmlFor="retypePassword" className="registrationDetails__passVerif">
-                        at least 8 characters • upper case • lower case • digit
-                    </label>
+
 
                 </div>
 
@@ -125,7 +138,7 @@ export default function ContactScreen() {
                     <p>We need your exact date of birth</p>
                     <label htmlFor="">
                         <input type="date"
-                               {...register("date", {required: true})} />
+                               {...register("date")} />
                     </label>
                 </div>
 
