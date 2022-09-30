@@ -1,13 +1,12 @@
 import React, {useMemo, useState} from "react";
+import {Routes} from "./Routes";
 import HomeScreen from "../components/HomeScreen";
 import ContactScreen from "../components/ContactScreen";
 import OfferScreen from "../components/OfferScreen";
 import BaseLayout from "../components/BaseLayout";
-import {Routes} from "./Routes";
 import GalleryScreen from "../components/GalleryScreen";
-import {UserNavigationContext} from "../context/UserNavigationContext";
 import {contextData as defaultContextData, NavigationContext} from "../hooks/useNavigationContext";
-import {logDOM} from "@testing-library/react";
+import ApiScreen from "../components/ApiScreen/ApiScreen";
 
 export default function Navigation() {
     const [currentPage, setCurrentPage] = useState(Routes.HOME)
@@ -18,12 +17,6 @@ export default function Navigation() {
         navigate: (data) => setCurrentPage(data),
     }), [currentPage, setCurrentPage]);
 
-
-    const result = () => {
-        return 2 + 5
-    }
-
-    const sum = useMemo(() => result(), []);
 
 
     const Page = () => {
@@ -36,6 +29,8 @@ export default function Navigation() {
                 return <ContactScreen/>
             case Routes.GALLERY:
                 return <GalleryScreen/>
+            case Routes.API:
+                return <ApiScreen/>
             default:
                 return '404'
         }

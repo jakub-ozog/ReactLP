@@ -21,6 +21,10 @@ const MENU = [
         name: 'CONTACT',
         route: Routes.CONTACT
     },
+    {
+        name: 'API',
+        route: Routes.API
+    }
 
 ]
 
