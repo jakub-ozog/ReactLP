@@ -21,5 +21,18 @@
   gap: 5rem;
   list-style-type: none;
 }
+.nav button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: Ubuntu, "sans-serif";
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.nav button:hover {
+  color: #61dafb;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@
     img {
       width: 250px;
     }
+
     h4 {
       color: #fff;
       margin-right: 1rem;
@@ -24,5 +25,21 @@
     gap: 5rem;
     list-style-type: none;
   }
+
+  button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-family: Ubuntu, "sans-serif";
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .2s;
+
+    &:hover {
+      color: #61dafb;
+    }
+  }
+
 }
 

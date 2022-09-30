@@ -1,0 +1,30 @@
+
+.passInput {
+  position: relative;
+
+
+  &__input {
+    width: 100%;
+  }
+
+  &__showPassIcon {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+}
+
+.passRetypeInput {
+  position: relative;
+
+  &__input {
+    width: 100%;
+  }
+
+  &__showPassRetypeIcon {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+}
